@@ -1,0 +1,8 @@
+pytest==7.4.4
+pytest-django==4.11.1
+django-filter==25.1
+djangorestframework==3.16.1
+djangorestframework_simplejwt==5.5.1
+mysqlclient==2.2.7
+requests==2.32.3
+django-cors-headers==4.9.0

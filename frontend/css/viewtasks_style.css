@@ -1,0 +1,189 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+}
+
+body > .container {
+    flex: 1;  
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0);
+    padding: 0.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: white;
+}
+
+.navbar .brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar .profile-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(0,0,0,0.9);
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.navbar .dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.navbar .profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#searchForm {
+    background-color: rgba(0,0,0,0.8); 
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+#searchForm label {
+    color: #fff;
+    font-weight: 500;
+}
+
+#searchForm input,
+#searchForm select {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid #ccc;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+#searchForm input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+#searchForm input:focus,
+#searchForm select:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+    box-shadow: 0 0 2px #fff;
+}
+
+#searchForm button {
+    background-color: #0d6efd; 
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#searchForm button:hover {
+    background-color: #0b5ed7; 
+}
+
+#searchForm .col-md-4,
+#searchForm .col-md-2 {
+    margin-bottom: 1rem;
+}
+
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(0,0,0,0.9);
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.navbar .dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.navbar .profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#taskList .card {
+    color: #000;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+#taskList .card-header {
+    font-weight: bolder;
+    color: #000;
+}
+
+#taskList .card-body .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#taskList .card-body p {
+    color: #000;
+}
+
+#taskList .card-footer {
+    background-color: rgba(0,0,0,0.6);
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+#taskList .btn-sm {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+p.profile{
+    display: inline;
+}
+
+#dashboard_url {
+    text-decoration: none;
+    color: white;
+}

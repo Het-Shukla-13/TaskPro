@@ -1,0 +1,133 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+}
+
+body > .container {
+    flex: 1;  
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0);
+    padding: 0.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: white;
+}
+
+.navbar .brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar .profile-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(0,0,0,0.9);
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.navbar .dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.navbar .profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.center-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.intro-text {
+    width: 100%;
+    height: 50vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url("../images/OIP.webp") no-repeat center center/cover;
+    color: white;
+    padding: 2rem;
+}
+
+.center-body p {
+    background-color: rgba(0,0,0,0.8); 
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.links nav {
+    margin: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.links nav a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0,0,0);
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.links nav a:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.footer {
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+p.profile{
+    display: inline;
+}
+
+#dashboard_url {
+    text-decoration: none;
+    color: white;
+}

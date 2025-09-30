@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TaskPro - User Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/userguide_style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="brand">
+            <a href="dashboard.html" id="dashboard_url"><h1 class="display-6 fw-bold">TaskPro</h1></a>
+        </div>
+        <div class="profile-dropdown">
+            <i class="fa-regular fa-user"></i><p class="profile"> Profile</p>
+            <div class="dropdown-content">
+                <a href="profile.html" onclick="goToProfile(event)">My Profile</a>
+                <a href="#" onclick="logoutUser()">Logout</a>
+            </div>
+        </div>
+    </div>
+    <div class="userguide container mt-4">
+        <h2>User Guide</h2>
+        <p>Here you can guide users how to use TaskPro:</p>
+        <ul>
+            <li>Create a task using the "Create Task" page</li>
+            <li>View and manage tasks in the "View Tasks" page</li>
+            <li>Check profile or delete account in the "Profile" page</li>
+        </ul>
+        <a href="dashboard.html" class="btn btn-secondary mt-3">Back to Dashboard</a>
+    </div>
+    <footer class="footer text-white text-center py-4">
+        <div class="container">
+        <div class="mb-3">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook fa-lg mx-2"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter fa-lg mx-2"></i></a>
+            <a href="#" aria-label="instagram"><i class="fab fa-instagram fa-lg mx-2"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg mx-2"></i></a>
+        </div>
+        <p>
+            <a href="#" class="text-white text-decoration-none mx-2">Help</a> |
+            <a href="#" class="text-white text-decoration-none mx-2">FAQs</a> |
+            <a href="#" class="text-white text-decoration-none mx-2">Reviews</a> |
+            <a href="#" class="text-white text-decoration-none mx-2">Contact Us</a>
+        </p>
+        <small>&copy; 2025 TaskPro. All Rights Reserved.</small>
+        </div>
+    </footer>
+<script src="js/app.js"></script>
+</body>
+</html>
