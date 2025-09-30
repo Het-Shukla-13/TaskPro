@@ -4,7 +4,7 @@ TaskPro is a full-stack web application designed to help users manage their task
 
 ## Table of Contents
 - [Features](#features)
-- [Screenshots / Demo](#working-demo)
+- [Working Demo](#working-demo)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
 - [Installation](#installation)
